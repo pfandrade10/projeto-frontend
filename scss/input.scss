@@ -1,0 +1,46 @@
+.box{
+    width: 80%;
+    height: 80%;
+    background-color: #99e6ff;
+    padding:15px;
+
+    .box__temperature{
+        font-weight: bold;
+        font-size:20px;
+        color:#262626;
+    }
+    .box__location{
+        font-weight: bold;
+        font-size:16px;
+        color:#262626;
+    }
+
+    .box__weather{
+        font-weight: 500;
+        color:#262626;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .box{
+      width: 60%;
+      height: 80%;
+      background-color: #0066ff;
+      padding:10px;
+    }
+    .box__temperature{
+      font-weight: bold;
+      font-size:20px;
+      color:white;
+    }
+    .box__location{
+      font-weight: bold;
+      font-size:16px;
+      color:white;
+    }
+    .box__weather{
+      font-weight: 500;
+      color:white;
+    }
+  }

@@ -25,35 +25,28 @@
 <body>
   
   <header>
-    <h1 class="app-title">Título da sua página ou webapp</h1>
-    <nav>Menu de navegação principal</nav>
+    <div>
+      <h1 style="display: inline-block;" class="app-title">Weather</h1>
+      <nav style="display: inline-block;" class="nav__link">Menu de navegação principal</nav>
+    </div>
   </header>
   <main>
     <section class="main-feature">
-      <div id="country">
+      <div class="box">
+        <div id="country" class="box__location"></div>
+        <br>
+        <div id="city" class="box__location"></div>
+        <br>
+        <div id="currentTemperature" class="box__temperature"></div>
+        <br>
+        <div id="minTemperature" class="box__weather"></div>
+        <br>
+        <div id="maxTemperature" class="box__weather"></div>
+        <br>
+        <div id="humidity" class="box__weather"></div>
 
+        OI
       </div>
-      <br>
-      <div id="city">
-
-      </div>
-      <br>
-      <div id="currentTemperature">
-        
-      </div>
-      <br>
-      <div id="minTemperature">
-        
-      </div>
-      <br>
-      <div id="maxTemperature">
-        
-      </div>
-      <br>
-      <div id="humidity">
-
-      </div>
-
     </section>
     <aside class="secundary-feature">Algum conteúdo ou feature não-principal de apoio</aside>
   </main>
@@ -61,7 +54,6 @@
 </body>
 
 <!-- Add your site or application content here -->
-<p>Hello world! This is HTML5 Boilerplate.</p>
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>

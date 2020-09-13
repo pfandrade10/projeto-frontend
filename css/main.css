@@ -5,7 +5,7 @@ body
 
 body > header 
 {
-  background-color: #627A14;
+  background-color: #0066ff;
   padding: 1vh 1vw;
   height: 10vh;
   box-sizing: border-box;
@@ -18,7 +18,9 @@ body > main {
 
 body > footer 
 {
-  height: 5vh;background-color: #B3CB65;
+  height: 5vh;
+  background-color: #001f4d;
+  color:white
 }
 
 h1.app-title
@@ -29,7 +31,7 @@ h1.app-title
 section.main-feature
 {
   float: left;
-  background-color: #fbfbfb;
+  background-color: white;
   width: 77vw;
   height: 85vh;
 }
@@ -37,8 +39,64 @@ section.main-feature
 aside.secundary-feature
 {
   float: right;
-  background-color: #6F4D8F;
+  background-color: #002966;
   width: 20vw;
   height: 85vh;
   color: #fff;
+}
+
+/* código mobile-first fora da media query */
+
+.nav__link{
+  margin-left: auto;
+  opacity: 0.8;
+}
+
+.box{
+  width: 80%;
+  height: 80%;
+  background-color: #0066ff;
+  padding:15px;
+  margin:auto;
+  margin-top: 25px;
+  box-shadow: 2px 2px 6px 2px rgb(0,0,0,0.2);
+  color:white;
+}
+
+.box__temperature{
+  font-weight: bold;
+  font-size:20px;
+  color:white;
+}
+.box__location{
+  font-weight: bold;
+  font-size:16px;
+  color:white;
+}
+.box__weather{
+  font-weight: 500;
+  color:white;
+}
+
+@media (min-width: 992px) {
+  .box{
+    width: 60%;
+    height: 80%;
+    background-color: #0066ff;
+    padding:10px;
+  }
+  .box__temperature{
+    font-weight: bold;
+    font-size:20px;
+    color:white;
+  }
+  .box__location{
+    font-weight: bold;
+    font-size:16px;
+    color:white;
+  }
+  .box__weather{
+    font-weight: 500;
+    color:white;
+  }
 }
