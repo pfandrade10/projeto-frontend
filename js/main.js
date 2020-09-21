@@ -17,7 +17,7 @@ if ("geolocation" in navigator) {
     alert("I'm sorry, but geolocation services are not supported by your browser.");
 }
 
-function findLocation(){
+async function findLocation(){
     navigator.geolocation.getCurrentPosition(function(position) {
 
         let latitude = position.coords.latitude;
