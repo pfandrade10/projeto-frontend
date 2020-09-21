@@ -36,8 +36,10 @@ function displayWeather(apiUrl){
     let maxTemperature = document.getElementById('maxTemperature');
     let humidity = document.getElementById('humidity');
 
+    //uso de arrow functions
     fetch(apiUrl).then((data) => {
         return data.json();
+        
     }).then((data) => {
     
         country.innerText = `País: ${data.sys.country}`;
