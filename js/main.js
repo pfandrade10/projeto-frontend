@@ -28,7 +28,7 @@ async function findLocation(){
 }
 
 
-function displayWeather(apiUrl){
+async function displayWeather(apiUrl){
     let country = document.getElementById('country');
     let city = document.getElementById('city');
     let currentTemperature = document.getElementById('currentTemperature');
