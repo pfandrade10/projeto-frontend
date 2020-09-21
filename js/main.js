@@ -41,6 +41,7 @@ function displayWeather(apiUrl){
     fetch(apiUrl).then((data) => {
         return data.json();
 
+        //Utilizando de promisses (then)
     }).then((data) => {
     
         country.innerText = `País: ${data.sys.country}`;
