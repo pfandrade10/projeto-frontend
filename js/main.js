@@ -40,12 +40,12 @@ function displayWeather(apiUrl){
         return data.json();
     }).then((data) => {
     
-        country.innerText = "País: " + data.sys.country;
-        city.innerText = "Cidade: " + data.name;
-        currentTemperature.innerText = "Temperatura Atual: " + data.main.temp  + "°C";
-        minTemperature.innerText = "Máxima: " + data.main.temp_max  + "°C";
-        maxTemperature.innerText = "Mínima: " + data.main.temp_min  + "°C";
-        humidity.innerText = "Umidade do ar: "+data.main.humidity + "%";
+        country.innerText = `País: ${data.sys.country}`;
+        city.innerText = `Cidade: ${data.name}`;
+        currentTemperature.innerText = `Temperatura Atual: ${data.main.temp} °C`;
+        minTemperature.innerText = `Máxima: ${data.main.temp_max} °C`;
+        maxTemperature.innerText = `Mínima: ${data.main.temp_min} °C`;
+        humidity.innerText = `Umidade do ar: ${data.main.humidity} %`;
         console.log(data);
     })
 }
