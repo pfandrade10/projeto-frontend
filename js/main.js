@@ -37,9 +37,10 @@ function displayWeather(apiUrl){
     let humidity = document.getElementById('humidity');
 
     //uso de arrow functions
+    // utilização de fetch API
     fetch(apiUrl).then((data) => {
         return data.json();
-        
+
     }).then((data) => {
     
         country.innerText = `País: ${data.sys.country}`;
